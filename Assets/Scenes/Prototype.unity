@@ -892,6 +892,50 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6697267052685809012, guid: a819bf61a2d443a4fb888173f06f4f4a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.64552015
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697267052685809012, guid: a819bf61a2d443a4fb888173f06f4f4a, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0971174
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697267052685809012, guid: a819bf61a2d443a4fb888173f06f4f4a, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0072838366
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697267052685809012, guid: a819bf61a2d443a4fb888173f06f4f4a, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.072838485
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697267052685809012, guid: a819bf61a2d443a4fb888173f06f4f4a, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.965
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697267052685809012, guid: a819bf61a2d443a4fb888173f06f4f4a, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697267052685809013, guid: a819bf61a2d443a4fb888173f06f4f4a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d0e4a57473073c341ab7f19ba1a439d0, type: 3}
+    - target: {fileID: 6697267052685809013, guid: a819bf61a2d443a4fb888173f06f4f4a, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697267052685809013, guid: a819bf61a2d443a4fb888173f06f4f4a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7264151
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697267052685809013, guid: a819bf61a2d443a4fb888173f06f4f4a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7264151
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697267052685809013, guid: a819bf61a2d443a4fb888173f06f4f4a, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7264151
+      objectReference: {fileID: 0}
     - target: {fileID: 6697267052685809015, guid: a819bf61a2d443a4fb888173f06f4f4a, type: 3}
       propertyPath: speed
       value: 5
