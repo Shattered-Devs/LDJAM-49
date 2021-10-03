@@ -19,7 +19,7 @@ public class Scrolling : MonoBehaviour
         {
             // Top to Bottom
             Instantiate(prefab, new Vector3(transform.position.x, (cameraPrefab.rect.yMax * (cameraPrefab.orthographicSize * 2)), 0),
-                Quaternion.identity);
+                Quaternion.identity, transform.parent);
 
             Destroy(gameObject);
         }
@@ -27,7 +27,7 @@ public class Scrolling : MonoBehaviour
         {
             // Bottom to Top
             Instantiate(prefab, new Vector3(transform.position.x, -(cameraPrefab.rect.yMax * (cameraPrefab.orthographicSize * 2)), 0),
-                Quaternion.identity);
+                Quaternion.identity, transform.parent);
 
             Destroy(gameObject);
         }
