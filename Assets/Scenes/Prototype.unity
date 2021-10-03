@@ -1361,6 +1361,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 564635731, guid: a819bf61a2d443a4fb888173f06f4f4a, type: 3}
+      propertyPath: _playTimes
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 582726034, guid: a819bf61a2d443a4fb888173f06f4f4a, type: 3}
       propertyPath: m_IsActive
       value: 0
