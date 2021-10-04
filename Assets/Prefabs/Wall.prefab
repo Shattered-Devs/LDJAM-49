@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6770515660103218094}
   - component: {fileID: 6770515660103218089}
-  - component: {fileID: 6770515660103218095}
   - component: {fileID: -2109810356933410975}
   - component: {fileID: 6674652637232601570}
+  - component: {fileID: 7625500466970306979}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -85,32 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6770515660103218095
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6770515660103218088}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!114 &-2109810356933410975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,6 +99,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6770515660103218088}
   cameraPrefab: {fileID: 2114779438860985149, guid: 881c2ca928057f24a8e03dbf046a4177, type: 3}
+  SCROLLED:
+    m_PersistentCalls:
+      m_Calls: []
   speed: 4
 --- !u!114 &6674652637232601570
 MonoBehaviour:
@@ -144,3 +121,19 @@ MonoBehaviour:
   - {fileID: 21300000, guid: cfce00a4d11349a4c8f430c20b84a1ae, type: 3}
   - {fileID: 21300000, guid: f995275f59b88ca4ebe002ae0fdfb6dd, type: 3}
   WallTilePrefab: {fileID: 8825235624519115045, guid: 48c1e979906eaf4448b1b80507d0ed6e, type: 3}
+--- !u!70 &7625500466970306979
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6770515660103218088}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 0.99999994}
+  m_Direction: 0
