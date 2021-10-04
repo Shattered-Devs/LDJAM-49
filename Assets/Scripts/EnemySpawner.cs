@@ -15,6 +15,11 @@ public class EnemySpawner : MonoBehaviour
     private float _spawnIntervalMin = 1f;
     private float _lastSpawnTime = 0f;
 
+    private void Start()
+    {
+        StartCoroutine(SpeedUp());
+    }
+
     private void Update()
     {
         if(Time.time > _lastSpawnTime + _spawnInterval)
@@ -27,6 +32,17 @@ public class EnemySpawner : MonoBehaviour
             Enemy.GetComponent<SpriteRenderer>().sprite = EnemyTypes[Random.Range(0, EnemyTypes.Length)];
 
             Enemy.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(0, maxHorizontalVelocity), 0));
+
+        }
+    }
+
+    public IEnumerator SpeedUp()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(10f);
+            _spawnInterval -= 0.4f;
+            Debug.Log("_spawnInterval changed! " + _spawnInterval);
         }
     }
 }

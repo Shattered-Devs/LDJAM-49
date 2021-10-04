@@ -208,10 +208,11 @@
       }
     },
     "net.shattered-devs.dragonbones": {
-      "version": "file:net.shattered-devs.dragonbones",
+      "version": "https://github.com/Shattered-Devs/DragonBones-Unity.git",
       "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
+      "source": "git",
+      "dependencies": {},
+      "hash": "a2d8d8e760092075e497f40087efe7fe44fa8e9d"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
