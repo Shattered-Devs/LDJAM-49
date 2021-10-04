@@ -9,17 +9,11 @@ public class EnemySpawner : MonoBehaviour
     public Color[] colours;
     public float maxHorizontalVelocity = 0;
 
-    private float _spawnInterval = 4f;
+    public float _spawnInterval = 4f;
 
     //Make it harder as the game goes on but not impossible.
     private float _spawnIntervalMin = 1f;
     private float _lastSpawnTime = 0f;
-    
-
-    private void Start()
-    {
-        
-    }
 
     private void Update()
     {
