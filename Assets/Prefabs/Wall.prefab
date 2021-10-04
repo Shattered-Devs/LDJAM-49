@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6770515660103218089}
   - component: {fileID: 6770515660103218095}
   - component: {fileID: -2109810356933410975}
+  - component: {fileID: 6674652637232601570}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -125,3 +126,21 @@ MonoBehaviour:
   prefab: {fileID: 6770515660103218088}
   cameraPrefab: {fileID: 2114779438860985149, guid: 881c2ca928057f24a8e03dbf046a4177, type: 3}
   speed: 4
+--- !u!114 &6674652637232601570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6770515660103218088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100150241aa91574bb47d785f332427c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flipX: 0
+  wallTiles:
+  - {fileID: 21300000, guid: ed83849f7eb8c6b408c61cf1a6e7319d, type: 3}
+  - {fileID: 21300000, guid: cfce00a4d11349a4c8f430c20b84a1ae, type: 3}
+  - {fileID: 21300000, guid: f995275f59b88ca4ebe002ae0fdfb6dd, type: 3}
+  WallTilePrefab: {fileID: 8825235624519115045, guid: 48c1e979906eaf4448b1b80507d0ed6e, type: 3}
