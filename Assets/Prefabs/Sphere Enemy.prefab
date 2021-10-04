@@ -4816,6 +4816,7 @@ GameObject:
   - component: {fileID: 2320567233101975889}
   - component: {fileID: 5161611885301936376}
   - component: {fileID: 2288258164519663497}
+  - component: {fileID: 801386277}
   m_Layer: 6
   m_Name: Sphere Enemy
   m_TagString: Enemy
@@ -4878,7 +4879,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: eb2121e8ad274f64fa2fe4de610d5337, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ce328679c8187eb4a9635a00ef173afc, type: 3}
   m_Color: {r: 0.9245283, g: 0.6203625, b: 0.3009078, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4899,7 +4900,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4917,3 +4918,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68a9c447af4a1f64b876e79e33ba6e51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &801386277
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6246055298848520927}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
