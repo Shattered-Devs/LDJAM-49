@@ -7,12 +7,14 @@ public class EnemySpawner : MonoBehaviour
     public GameObject EnemyPrefab;
     public Sprite[] EnemyTypes;
     public Color[] colours;
+    public float maxHorizontalVelocity = 0;
 
     private float _spawnInterval = 4f;
 
     //Make it harder as the game goes on but not impossible.
     private float _spawnIntervalMin = 1f;
     private float _lastSpawnTime = 0f;
+    
 
     private void Start()
     {
@@ -29,6 +31,8 @@ public class EnemySpawner : MonoBehaviour
             GameObject Enemy = Instantiate(EnemyPrefab, spawnPos, Quaternion.identity);
 
             Enemy.GetComponent<SpriteRenderer>().sprite = EnemyTypes[Random.Range(0, EnemyTypes.Length)];
+
+            Enemy.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(0, maxHorizontalVelocity), 0));
         }
     }
 }
