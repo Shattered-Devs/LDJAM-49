@@ -11,21 +11,19 @@ public class Scrolling : MonoBehaviour
 
     private Vector2 _totalSize;
     
-    private void Update()
+    private void FixedUpdate()
     {
+        transform.Translate(0, speed * Time.fixedDeltaTime, 0);
         if (transform.position.y < -(cameraPrefab.rect.yMax * (cameraPrefab.orthographicSize * 2)))
         {
             // Top to Bottom
             transform.position = new Vector3(transform.position.x, (cameraPrefab.rect.yMax * (cameraPrefab.orthographicSize * 2)), 0);
-            Debug.Log("Moved " + this.name + " to " + transform.position);
         }
         else if (transform.position.y > (cameraPrefab.rect.yMax * (cameraPrefab.orthographicSize * 2)))
         {
             // Bottom to Top
-            transform.position = new Vector3(transform.position.x, -(cameraPrefab.rect.yMax * (cameraPrefab.orthographicSize * 2)), 0);
-            Debug.Log("Moved " + this.name + " to " + transform.position);
+            transform.position = new Vector3(transform.position.x, transform.position.y - (cameraPrefab.rect.yMax * (cameraPrefab.orthographicSize * 2)) - (cameraPrefab.rect.yMax * (cameraPrefab.orthographicSize * 2)), 0);
         }
-        transform.Translate(0, speed * Time.deltaTime, 0);
 
     }
 }
