@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Spawner
   - Enemy
+  - EventDestroyer
+  - EventItems
   layers:
   - Default
   - TransparentFX
