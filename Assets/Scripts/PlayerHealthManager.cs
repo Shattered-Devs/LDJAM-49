@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class PlayerHealthManager: MonoBehaviour
 {
+    public GameObject GameOverScreen;
+
     [SerializeField]
     private HealthBar _healthBar;
     [SerializeField]
@@ -12,6 +14,7 @@ public class PlayerHealthManager: MonoBehaviour
 
     private float _lastTimeTookDamage = 0;
     private int _curHearts = 0;
+
 
     private void Start()
     {
@@ -40,8 +43,7 @@ public class PlayerHealthManager: MonoBehaviour
 
             if (_curHearts < 0)
             {
-                //TODO Trigger Gameover
-                return; // Linuxydable comments: Return the function for avoid updating if the player is dead.
+                GameOver();
             }
             
             _healthBar.UpdateHealth(_curHearts, _maxHearts);
@@ -55,4 +57,9 @@ public class PlayerHealthManager: MonoBehaviour
         _healthBar.UpdateHealth(_curHearts, _maxHearts);
     }
 
+    public void GameOver()
+    {
+        Time.timeScale = 0;
+        GameOverScreen.SetActive(true);
+    }
 }
