@@ -17,12 +17,14 @@ public class PlayerHealthManager: MonoBehaviour
     {
         // Linuxydable comments: For modularity, always set the current health with the max health on the start of the game !
         _curHearts = _maxHearts;
+        _healthBar.UpdateHealth(_curHearts, _maxHearts);
     }
 
 
     public void ResetHealth()
     {
         _curHearts = _maxHearts;
+        _healthBar.UpdateHealth(_curHearts, _maxHearts);
     }
 
     public void TakeDamage()
@@ -50,6 +52,7 @@ public class PlayerHealthManager: MonoBehaviour
     {
         _curHearts += numHearts;
         _curHearts = Mathf.Min(_maxHearts, _curHearts);
+        _healthBar.UpdateHealth(_curHearts, _maxHearts);
     }
 
 }
