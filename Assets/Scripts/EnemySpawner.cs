@@ -41,7 +41,8 @@ public class EnemySpawner : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(10f);
-            _spawnInterval -= 0.4f;
+            _spawnInterval -= 0.3f;
+            _spawnInterval = Mathf.Max(_spawnIntervalMin, _spawnInterval);
             Debug.Log("_spawnInterval changed! " + _spawnInterval);
         }
     }
